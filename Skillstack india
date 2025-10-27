@@ -1,0 +1,150 @@
+import React from "react";
+// SkillStack India - Single-file landing page (React + Tailwind) // Usage: drop this component into a React app (CRA, Next.js page, etc.) // - Replace image placeholders with your real image paths (public/ or /assets/) // - TailwindCSS must be configured in the project
+export default function SkillStackLanding() { return (
+{/* Top nav /}
+{/ Logo placeholder - replace with */}
+SS
+SkillStack India
+Digital Business Starter Kit
+About What's inside Process Promo Get the Kit
+ {/* Hero */}
+  <section className="bg-gradient-to-b from-white to-sky-50">
+    <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 className="text-4xl md:text-5xl font-extrabold text-blue-900 leading-tight">Digital Business Starter Kit</h2>
+        <p className="mt-4 text-lg text-slate-700">Everything small businesses, freelancers and creators need to go digital — templates, checklists, and guided processes in Hindi & English.</p>
+
+        <div className="mt-6 flex gap-4">
+          <a href="#kit" className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg font-medium">Explore the kit</a>
+          <a href="#thumbnails" className="inline-block border border-blue-600 text-blue-600 px-5 py-3 rounded-lg font-medium">See promo</a>
+        </div>
+
+        <p className="mt-6 text-sm text-slate-500">Founder: <strong>Rahul Verma</strong></p>
+      </div>
+
+      <div className="relative">
+        {/* Replace placeholder with curated brochure cover image */}
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+          <img src="/assets/brochure-cover.jpg" alt="Brochure cover" className="w-full h-72 object-cover" />
+        </div>
+        <div className="absolute -bottom-6 left-6 shadow-lg rounded-lg overflow-hidden w-40">
+          <img src="/assets/sample-thumb-1.jpg" alt="thumb" className="w-full h-24 object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* About */}
+  <section id="about" className="max-w-6xl mx-auto px-6 py-12">
+    <div className="grid md:grid-cols-2 gap-8 items-center">
+      <div className="bg-sky-50 rounded-xl p-8">
+        <h3 className="text-2xl font-semibold text-blue-900">About SkillStack India</h3>
+        <p className="mt-4 text-slate-700">We empower entrepreneurs and creators to adopt digital tools quickly and affordably. Our starter kit contains templates (PDF, Excel), editable assets (Canva), and an operational Notion workspace to manage launch and growth.</p>
+        <blockquote className="mt-6 border-l-4 border-blue-200 pl-4 text-slate-600 italic">"Aaj ki mehnat kal ki safalta ki neev hai" — हमारी प्रतिबद्धता।</blockquote>
+      </div>
+      <div className="grid grid-cols-2 gap-6">
+        <div className="p-6 bg-white rounded-lg shadow-sm text-center">
+          <h4 className="text-3xl font-bold text-blue-800">700M</h4>
+          <p className="text-sm text-slate-500">Internet users (India)</p>
+        </div>
+        <div className="p-6 bg-white rounded-lg shadow-sm text-center">
+          <h4 className="text-3xl font-bold text-blue-800">80%</h4>
+          <p className="text-sm text-slate-500">Youth online</p>
+        </div>
+        <div className="p-6 bg-white rounded-lg shadow-sm text-center">
+          <h4 className="text-3xl font-bold text-blue-800">65%</h4>
+          <p className="text-sm text-slate-500">E‑commerce growth</p>
+        </div>
+        <div className="p-6 bg-white rounded-lg shadow-sm text-center">
+          <h4 className="text-3xl font-bold text-blue-800">1M+</h4>
+          <p className="text-sm text-slate-500">Entrepreneurs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* What's inside */}
+  <section id="kit" className="bg-sky-50 py-12">
+    <div className="max-w-6xl mx-auto px-6">
+      <h3 className="text-3xl font-semibold text-blue-900 text-center">What's Inside the Kit</h3>
+      <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
+        {[
+          { title: 'PDF', img: '/assets/icon-pdf.png' },
+          { title: 'Excel', img: '/assets/icon-excel.png' },
+          { title: 'Canva', img: '/assets/icon-canva.png' },
+          { title: 'Notion', img: '/assets/icon-notion.png' },
+        ].map((it) => (
+          <div key={it.title} className="bg-white rounded-xl shadow p-6 text-center">
+            <img src={it.img} alt={it.title} className="mx-auto h-12 mb-4" />
+            <div className="font-semibold text-blue-800">{it.title}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Process Flow */}
+  <section id="process" className="max-w-6xl mx-auto px-6 py-12">
+    <h3 className="text-3xl font-semibold text-center text-blue-900">Process Flow</h3>
+    <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-8">
+      {[
+        { title: 'Learn', icon: '/assets/icon-learn.png' },
+        { title: 'Build', icon: '/assets/icon-build.png' },
+        { title: 'Launch', icon: '/assets/icon-launch.png' },
+        { title: 'Grow', icon: '/assets/icon-grow.png' },
+      ].map((p) => (
+        <div key={p.title} className="flex flex-col items-center gap-3">
+          <div className="w-20 h-20 rounded-lg bg-white flex items-center justify-center shadow">
+            <img src={p.icon} alt={p.title} className="h-10" />
+          </div>
+          <div className="font-semibold text-blue-800">{p.title}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  {/* Promotional thumbnails for Instagram */}
+  <section id="thumbnails" className="bg-sky-50 py-12">
+    <div className="max-w-6xl mx-auto px-6">
+      <h3 className="text-2xl font-semibold text-center text-blue-900">Promo thumbnails (Instagram)</h3>
+      <p className="text-sm text-center text-slate-600 mt-2">Download or use these images for your Instagram carousel and posts. (Placeholders below)</p>
+
+      <div className="mt-6 grid grid-cols-2 md:grid-cols-5 gap-4">
+        {Array.from({ length: 10 }).map((_, i) => (
+          <div key={i} className="bg-white rounded-lg overflow-hidden shadow">
+            <img src={`/assets/thumb-${i + 1}.jpg`} alt={`thumb-${i + 1}`} className="w-full h-40 object-cover" />
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* CTA */}
+  <section className="max-w-6xl mx-auto px-6 py-12 text-center">
+    <h4 className="text-xl font-semibold">Ready to go digital?</h4>
+    <p className="mt-3 text-slate-700">Get the complete starter kit and step-by-step support to launch your digital business.</p>
+    <div className="mt-6 flex items-center justify-center gap-4">
+      <a href="#" className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium">Contact Us</a>
+      <a href="#" className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-medium">View Brochure</a>
+    </div>
+  </section>
+
+  {/* Footer */}
+  <footer id="contact" className="bg-white border-t mt-8">
+    <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded bg-blue-600 flex items-center justify-center text-white font-bold">SS</div>
+          <div>
+            <div className="font-semibold">SkillStack India</div>
+            <div className="text-xs text-slate-500">Empower. Skill. Succeed.</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="text-sm text-slate-600">Founder: <strong>Rahul Verma</strong></div>
+    </div>
+  </footer>
+</div>
+
+); }
