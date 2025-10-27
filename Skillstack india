@@ -1,150 +1,82 @@
-import React from "react";
-// SkillStack India - Single-file landing page (React + Tailwind) // Usage: drop this component into a React app (CRA, Next.js page, etc.) // - Replace image placeholders with your real image paths (public/ or /assets/) // - TailwindCSS must be configured in the project
-export default function SkillStackLanding() { return (
-{/* Top nav /}
-{/ Logo placeholder - replace with */}
-SS
-SkillStack India
-Digital Business Starter Kit
-About What's inside Process Promo Get the Kit
- {/* Hero */}
-  <section className="bg-gradient-to-b from-white to-sky-50">
-    <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <div>
-        <h2 className="text-4xl md:text-5xl font-extrabold text-blue-900 leading-tight">Digital Business Starter Kit</h2>
-        <p className="mt-4 text-lg text-slate-700">Everything small businesses, freelancers and creators need to go digital — templates, checklists, and guided processes in Hindi & English.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillStack India – Empowering Digital Growth</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",sans-serif;}
+    body{background:linear-gradient(180deg,#e6f0ff,#ffffff);color:#0a2540;}
+    header{background:#0a2540;color:#fff;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:1rem 2rem;}
+    .logo{height:40px;}
+    nav a{color:#fff;margin:0 1rem;text-decoration:none;font-weight:500;}
+    nav a:hover{text-decoration:underline;}
+    .hero{padding:4rem 2rem;text-align:center;background:linear-gradient(135deg,#1a4dba,#00aaff);color:#fff;border-radius:0 0 30px 30px;}
+    .hero span{color:#fdcb26;}
+    .btn{background:#fdcb26;color:#0a2540;padding:.8rem 1.5rem;border:none;border-radius:10px;font-weight:600;cursor:pointer;margin:.5rem;}
+    .btn:hover{background:#ffdf6b;}
+    section{padding:2rem;text-align:center;}
+    h2{color:#1a4dba;margin-bottom:1rem;}
+    p{margin:.5rem 0;line-height:1.6;}
+    .card{background:#fff;max-width:850px;margin:1.5rem auto;padding:1.5rem;border-radius:20px;box-shadow:0 4px 12px rgba(0,0,0,.1);}
+    footer{background:#0a2540;color:#fff;text-align:center;padding:1rem;margin-top:3rem;border-radius:30px 30px 0 0;}
+    @media(max-width:600px){header{flex-direction:column;align-items:flex-start;}nav a{margin:.5rem 0;display:block;}}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.ibb.co/pb0z4Rn/skillstack-logo.png" alt="SkillStack India Logo" class="logo">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-        <div className="mt-6 flex gap-4">
-          <a href="#kit" className="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg font-medium">Explore the kit</a>
-          <a href="#thumbnails" className="inline-block border border-blue-600 text-blue-600 px-5 py-3 rounded-lg font-medium">See promo</a>
-        </div>
+  <section id="home" class="hero">
+    <h1>Welcome to <span>SkillStack India</span></h1>
+    <p>Empowering creators, freelancers, and entrepreneurs with modern digital tools.</p>
+    <p style="font-weight:600;">एक कदम डिजिटल इंडिया की ओर 🇮🇳</p>
+    <button class="btn" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'});">Explore Products</button>
+    <button class="btn" onclick="alert('Brochure download will be added soon!')">Download Brochure</button>
+  </section>
 
-        <p className="mt-6 text-sm text-slate-500">Founder: <strong>Rahul Verma</strong></p>
-      </div>
-
-      <div className="relative">
-        {/* Replace placeholder with curated brochure cover image */}
-        <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-          <img src="/assets/brochure-cover.jpg" alt="Brochure cover" className="w-full h-72 object-cover" />
-        </div>
-        <div className="absolute -bottom-6 left-6 shadow-lg rounded-lg overflow-hidden w-40">
-          <img src="/assets/sample-thumb-1.jpg" alt="thumb" className="w-full h-24 object-cover" />
-        </div>
-      </div>
+  <section id="about">
+    <div class="card">
+      <h2>About Us</h2>
+      <p>SkillStack India is a digital empowerment initiative helping individuals and small businesses go online easily.</p>
+      <p><b>Mission:</b> To make digital tools accessible, affordable & understandable for everyone.</p>
+      <p><b>Vision:</b> A self-reliant, tech-enabled India where every skill finds a global stage.</p>
+      <p style="font-style:italic;">“Empowering Skills, Empowering India.”</p>
     </div>
   </section>
 
-  {/* About */}
-  <section id="about" className="max-w-6xl mx-auto px-6 py-12">
-    <div className="grid md:grid-cols-2 gap-8 items-center">
-      <div className="bg-sky-50 rounded-xl p-8">
-        <h3 className="text-2xl font-semibold text-blue-900">About SkillStack India</h3>
-        <p className="mt-4 text-slate-700">We empower entrepreneurs and creators to adopt digital tools quickly and affordably. Our starter kit contains templates (PDF, Excel), editable assets (Canva), and an operational Notion workspace to manage launch and growth.</p>
-        <blockquote className="mt-6 border-l-4 border-blue-200 pl-4 text-slate-600 italic">"Aaj ki mehnat kal ki safalta ki neev hai" — हमारी प्रतिबद्धता।</blockquote>
-      </div>
-      <div className="grid grid-cols-2 gap-6">
-        <div className="p-6 bg-white rounded-lg shadow-sm text-center">
-          <h4 className="text-3xl font-bold text-blue-800">700M</h4>
-          <p className="text-sm text-slate-500">Internet users (India)</p>
-        </div>
-        <div className="p-6 bg-white rounded-lg shadow-sm text-center">
-          <h4 className="text-3xl font-bold text-blue-800">80%</h4>
-          <p className="text-sm text-slate-500">Youth online</p>
-        </div>
-        <div className="p-6 bg-white rounded-lg shadow-sm text-center">
-          <h4 className="text-3xl font-bold text-blue-800">65%</h4>
-          <p className="text-sm text-slate-500">E‑commerce growth</p>
-        </div>
-        <div className="p-6 bg-white rounded-lg shadow-sm text-center">
-          <h4 className="text-3xl font-bold text-blue-800">1M+</h4>
-          <p className="text-sm text-slate-500">Entrepreneurs</p>
-        </div>
-      </div>
+  <section id="products">
+    <div class="card">
+      <h2>Our Digital Products</h2>
+      <ul style="list-style:none;padding:0;">
+        <li>📘 Learning Guides (PDF)</li>
+        <li>🎨 Canva Templates for Branding</li>
+        <li>📊 Excel & Notion Productivity Tools</li>
+        <li>🚀 Startup Launch Checklists</li>
+      </ul>
+      <br>
+      <button class="btn" onclick="alert('Brochure link coming soon!')">Download Brochure</button>
     </div>
   </section>
 
-  {/* What's inside */}
-  <section id="kit" className="bg-sky-50 py-12">
-    <div className="max-w-6xl mx-auto px-6">
-      <h3 className="text-3xl font-semibold text-blue-900 text-center">What's Inside the Kit</h3>
-      <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-6">
-        {[
-          { title: 'PDF', img: '/assets/icon-pdf.png' },
-          { title: 'Excel', img: '/assets/icon-excel.png' },
-          { title: 'Canva', img: '/assets/icon-canva.png' },
-          { title: 'Notion', img: '/assets/icon-notion.png' },
-        ].map((it) => (
-          <div key={it.title} className="bg-white rounded-xl shadow p-6 text-center">
-            <img src={it.img} alt={it.title} className="mx-auto h-12 mb-4" />
-            <div className="font-semibold text-blue-800">{it.title}</div>
-          </div>
-        ))}
-      </div>
+  <section id="contact">
+    <div class="card">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Write to us for collaborations or feedback.</p>
+      <p><b>Email:</b> skillstack.india@gmail.com</p>
+      <p><b>Founder:</b> Himanshu Vaghela</p>
     </div>
   </section>
 
-  {/* Process Flow */}
-  <section id="process" className="max-w-6xl mx-auto px-6 py-12">
-    <h3 className="text-3xl font-semibold text-center text-blue-900">Process Flow</h3>
-    <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-8">
-      {[
-        { title: 'Learn', icon: '/assets/icon-learn.png' },
-        { title: 'Build', icon: '/assets/icon-build.png' },
-        { title: 'Launch', icon: '/assets/icon-launch.png' },
-        { title: 'Grow', icon: '/assets/icon-grow.png' },
-      ].map((p) => (
-        <div key={p.title} className="flex flex-col items-center gap-3">
-          <div className="w-20 h-20 rounded-lg bg-white flex items-center justify-center shadow">
-            <img src={p.icon} alt={p.title} className="h-10" />
-          </div>
-          <div className="font-semibold text-blue-800">{p.title}</div>
-        </div>
-      ))}
-    </div>
-  </section>
-
-  {/* Promotional thumbnails for Instagram */}
-  <section id="thumbnails" className="bg-sky-50 py-12">
-    <div className="max-w-6xl mx-auto px-6">
-      <h3 className="text-2xl font-semibold text-center text-blue-900">Promo thumbnails (Instagram)</h3>
-      <p className="text-sm text-center text-slate-600 mt-2">Download or use these images for your Instagram carousel and posts. (Placeholders below)</p>
-
-      <div className="mt-6 grid grid-cols-2 md:grid-cols-5 gap-4">
-        {Array.from({ length: 10 }).map((_, i) => (
-          <div key={i} className="bg-white rounded-lg overflow-hidden shadow">
-            <img src={`/assets/thumb-${i + 1}.jpg`} alt={`thumb-${i + 1}`} className="w-full h-40 object-cover" />
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  {/* CTA */}
-  <section className="max-w-6xl mx-auto px-6 py-12 text-center">
-    <h4 className="text-xl font-semibold">Ready to go digital?</h4>
-    <p className="mt-3 text-slate-700">Get the complete starter kit and step-by-step support to launch your digital business.</p>
-    <div className="mt-6 flex items-center justify-center gap-4">
-      <a href="#" className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium">Contact Us</a>
-      <a href="#" className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-medium">View Brochure</a>
-    </div>
-  </section>
-
-  {/* Footer */}
-  <footer id="contact" className="bg-white border-t mt-8">
-    <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
-      <div>
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded bg-blue-600 flex items-center justify-center text-white font-bold">SS</div>
-          <div>
-            <div className="font-semibold">SkillStack India</div>
-            <div className="text-xs text-slate-500">Empower. Skill. Succeed.</div>
-          </div>
-        </div>
-      </div>
-
-      <div className="text-sm text-slate-600">Founder: <strong>Rahul Verma</strong></div>
-    </div>
+  <footer>
+    <p>© 2025 SkillStack India | Founded by Himanshu Vaghela | Empowering Digital Growth</p>
   </footer>
-</div>
-
-); }
+</body>
+</html>
