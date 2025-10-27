@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SkillStack India — Digital Business Starter Kit</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="SkillStack India" class="logo"/>
+      </a>
+      <nav class="nav">
+        <a href="about.html">About</a>
+        <a href="kit.html">Kit</a>
+        <a href="process.html">Process</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-left">
+        <h1>Digital Business Starter Kit</h1>
+        <p class="lead">एक कदम डिजिटल इंडिया की ओर — templates, guides & tools to go digital fast.</p>
+        <p><a class="cta" href="kit.html">Learn More</a></p>
+        <p class="founder">Founder: <strong>Himanshu Vaghela</strong></p>
+      </div>
+      <div class="hero-right">
+        <img src="images/cover.jpg" alt="Brochure cover" class="cover" />
+      </div>
+    </div>
+  </main>
+
+  <section class="gallery">
+    <div class="wrap">
+      <h2>Brochure Preview</h2>
+      <div class="thumbs">
+        <img src="images/page2.jpg" alt="page 2" />
+        <img src="images/page3.jpg" alt="page 3" />
+        <img src="images/page4.jpg" alt="page 4" />
+        <img src="images/page5.jpg" alt="page 5" />
+        <img src="images/page6.jpg" alt="page 6" />
+      </div>
+      <p class="small">Use the Kit page to download each asset or scan the QR in the brochure.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>© <strong>SkillStack India</strong> — Empower. Skill. Succeed.</div>
+      <div class="small">Email: <a href="mailto:007himanshu786@gmail.com">007himanshu786@gmail.com</a></div>
+    </div>
+  </footer>
+</body>
+</html>
