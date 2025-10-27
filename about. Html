@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — SkillStack India</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="brand"><img src="images/logo.png" alt="logo" class="logo"/></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="kit.html">Kit</a>
+        <a href="process.html">Process</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap article">
+    <h1>About SkillStack India</h1>
+    <p><strong>Mission:</strong> Empowering businesses to go digital.</p>
+    <p><strong>Vision:</strong> A digitally inclusive India.</p>
+
+    <h2>Why this Kit?</h2>
+    <p>This starter kit includes templates (PDF/Canva), Excel trackers, Notion setup and step-by-step guidance to help small businesses, freelancers and creators go online quickly and affordably.</p>
+
+    <h3>Founder</h3>
+    <p><strong>Himanshu Vaghela</strong> — Founder & CEO. Email: <a href="mailto:007himanshu786@gmail.com">007himanshu786@gmail.com</a></p>
+
+    <p><a class="cta" href="kit.html">Open Kit</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">© SkillStack India</div>
+  </footer>
+</body>
+</html>
