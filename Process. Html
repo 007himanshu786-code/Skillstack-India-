@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Process — SkillStack India</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="brand"><img src="images/logo.png" alt="logo" class="logo"/></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="kit.html">Kit</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap article">
+    <h1>Process Flow</h1>
+
+    <div class="flow">
+      <div class="flow-step">Learn → Build → Launch → Grow</div>
+      <div class="flow-step">Build → Launch → Scale → Sustain</div>
+    </div>
+
+    <p>Step-by-step guidance to take an idea from learning to sustained business growth.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">© SkillStack India</div>
+  </footer>
+</body>
+</html>
