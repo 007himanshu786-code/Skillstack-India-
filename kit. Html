@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kit — SkillStack India</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="brand"><img src="images/logo.png" alt="logo" class="logo"/></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="process.html">Process</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap article">
+    <h1>What's Inside the Kit</h1>
+    <div class="grid-2">
+      <div class="card">
+        <h3>PDF</h3>
+        <p>Ready-to-print brochures & guides.</p>
+        <!-- If you have specific links to files, replace # with file link -->
+        <a class="btn" href="#">Download PDF</a>
+      </div>
+      <div class="card">
+        <h3>Excel</h3>
+        <p>Inventory, pricing & finance trackers.</p>
+        <a class="btn" href="#">Download Excel</a>
+      </div>
+      <div class="card">
+        <h3>Canva</h3>
+        <p>Editable graphics templates.</p>
+        <a class="btn" href="#">Open Canva Template</a>
+      </div>
+      <div class="card">
+        <h3>Notion</h3>
+        <p>Project & content planner.</p>
+        <a class="btn" href="#">Open Notion</a>
+      </div>
+    </div>
+
+    <h2>Who can use</h2>
+    <ul>
+      <li>Small Businesses</li>
+      <li>Freelancers</li>
+      <li>Creators</li>
+      <li>Training Centres</li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">© SkillStack India</div>
+  </footer>
+</body>
+</html>
