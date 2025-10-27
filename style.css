@@ -1,0 +1,9 @@
+body{font-family:'Segoe UI',sans-serif;background:#f7faff;margin:0;color:#222;}
+header{background:#0056d2;color:white;text-align:center;padding:20px;}
+header img{height:60px;}
+nav{background:#003c99;text-align:center;padding:10px;}
+nav a{color:white;text-decoration:none;margin:0 15px;font-weight:500;}
+nav a:hover{text-decoration:underline;}
+.container{padding:20px;max-width:900px;margin:auto;}
+h1,h2{color:#003c99;}
+footer{background:#0056d2;color:white;text-align:center;padding:20px;margin-top:40px;}
